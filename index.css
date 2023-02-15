@@ -1,0 +1,25 @@
+input, input[type=text], input[type=password]
+{
+	-moz-border-radius:8px;
+	background:white;
+	color:balck;
+}
+body
+{
+	background:black;
+	font-size:20px;
+	color:white;
+}
+a{
+	color:orange;
+}
+a:hover
+{
+	
+	background:white;
+	border:thin ridge red;
+}
+a:active
+{
+	background:white;
+}
