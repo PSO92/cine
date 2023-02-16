@@ -1,5 +1,6 @@
 <?php
 require("./config.php");
+$server_ip = $_SERVER['SERVER_ADDR'];
 $stmt = $pdo->prepare("SELECT * FROM dvd");
 $stmt->bindParam(1,$id);
 $stmt->execute();
@@ -14,7 +15,7 @@ $stmt->execute();
 	<body>
 <?php	
 	print ("<h1 align=center>Liste des films</h1>");
-
+	print ("<h2 align=center>$server_ip</h2>");
 $res = $stmt->fetchAll();
 foreach ( $res as $ligne ) {
 
