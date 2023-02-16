@@ -1,6 +1,6 @@
 <?php
 //configuration de la connexion BDD
-$host = "localhost";
+$host = "192.168.60.6";
 $user = "cine";
 $pass = "1234";
 $base = "cine";
@@ -12,7 +12,7 @@ $base = "cine";
 	}
 	catch(Exception $e)
 	{
-		// En cas d'erreur, on affiche un message et on arrête tout
+		// En cas d'erreur, on affiche un message et on arrÃªte tout
         die('Erreur : '.$e->getMessage());
 	}
 
