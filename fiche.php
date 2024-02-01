@@ -7,7 +7,6 @@ WHERE realisateur.idreal = dvdreal.idreal AND
 dvd.iddvd = dvdreal.iddvd AND dvd.iddvd = $numCom";
 
 $stmt = $pdo->prepare($query);
-$stmt->bindParam(1,$id);
 $stmt->execute();
 $res = $stmt->fetchAll();
 
