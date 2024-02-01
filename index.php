@@ -3,7 +3,6 @@ require("./config.php");
 $server_ip = $_SERVER['SERVER_ADDR'];
 $server_nom = $_SERVER['SERVER_NAME'];
 $stmt = $pdo->prepare("SELECT * FROM dvd");
-$stmt->bindParam(1,$id);
 $stmt->execute();
 
 ?>
