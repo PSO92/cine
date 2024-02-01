@@ -1,6 +1,6 @@
 <?php
 //configuration de la connexion BDD
-$host = "192.168.60.6";
+$host = "localhost";
 $user = "cine";
 $pass = "1234";
 $base = "cine";
